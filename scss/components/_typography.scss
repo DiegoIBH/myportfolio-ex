@@ -1,6 +1,5 @@
 @use '../custom' as *;
-@use 'mixins' as *;
-
+@use '../components/mixins' as *;
 //Navbar Icon text
 .menu{
     h2{
