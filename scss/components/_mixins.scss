@@ -1,0 +1,20 @@
+
+@use '../custom' as *;
+// Mixins are personalized variables that can be used in different places in the code.
+@mixin gradient {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+};
+
+@mixin text-gradient {
+    background-image:linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+};
+
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+};
