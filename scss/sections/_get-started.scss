@@ -1,0 +1,23 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.get-started{
+    padding-bottom: 2rem;
+    &__content{
+        padding: 5rem;
+        @include gradient;
+        color: white;
+    }
+    &__form{
+        margin-top: 1rem;
+        padding: 3rem 2rem 0 2rem;
+        h3{
+            @include text-gradient;
+            padding-bottom: 1rem;
+        }
+        button{
+            margin-left: 10%;
+            width: 80%;
+        }
+    }
+}
