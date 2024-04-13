@@ -32,20 +32,21 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Faq</a>
+                        <a class="nav-link" href="#faq">Faq</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#get-started">Contact</a>
                     </li>
                 </ul>
-                <button type="button" class="rounded-pill btn-rounded"> +34 645234612 <span><i
-                            class="fas fa-phone-alt"></i></span></button>
+                <a href="https://wa.me/qr/UWTTR5DW5TFPF1">
+                    <button type="button" class="rounded-pill btn-rounded"> +34 645234612 <span><i class="fas fa-phone-alt"></i></span></button>
+                </a>
             </div>
         </div>
     </nav>
@@ -61,11 +62,13 @@
                             This is a multi-purpose responsive layout created with bootstrap v5.
                         </span>
                     </h1>
-                    <button type="button" class="rounded-pill btn-rounded"> Get in touch!
-                        <span>
-                            <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </button>
+                    <a href="#get-started">
+                        <button type="button" class="rounded-pill btn-rounded"> Get in touch!
+                            <span>
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </a>
                 </div>
                 <!--Start Intro Video Area -->
                 <div class="col-md-6 intros text-end">
@@ -583,43 +586,43 @@
     <section id="get-started" class="get-started">
         <div class="container pb-2">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center mb-5">
                     <h2 class="display-4 fw-bold text-capitalize">get started</h2>
                     <div class="heading-line"></div>
                     <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque exercitationem necessitatibus dolor odio fugit libero eos! Rem quidem nesciunt eius harum, nemo aut laudantium culpa. Rerum ipsa quia dignissimos. Ratione.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="get-started__content">
                         <h3 class="display-4 fw-bold text-capitalize">100% Satisfaction Guaranteed</h3>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, pariatur consectetur possimus dolor eos exercitationem magni consequuntur delectus dolorum, ullam odit enim. Laboriosam, fugiat! Ut amet ducimus soluta reiciendis incidunt.</p>
                         <h4 class= "display-6 fw-bold">What will be the next step? </h4>
                         <ol class="lead">
-                            <li>We'll prepare the proposal.</li>
-                            <li>We'll discuss it together.</li>
-                            <li>Let's start the discussion.</li>
+                            <li><i class="fa-solid fa-check"></i>We'll prepare the proposal.</li>
+                            <li><i class="fa-solid fa-check"></i>We'll discuss it together.</li>
+                            <li><i class="fa-solid fa-check"></i>Let's start the discussion.</li>
                         </ol>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="get-started__form">
                         <h3 class="display-6 fw-bold text-capitalize">Start Your Project</h3>
                         <form>
                             <div class="mb-3">
                                 <label for="exampleInputName1" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="exampleInputName1" aria-describedby="formHelp">
+                                <input type="text" class="form-control" id="exampleInputName1" aria-describedby="formHelp" placeholder="Add full name here!">
                               </div>
                             <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="formHelp">
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="formHelp" placeholder="Add Email here!">
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                                <label for="floatingTextarea">Comments</label>
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                                <label for="floatingTextarea" >Comments</label>
                                 <div id="formHelp" class="form-text">We'll never share your data with anyone else.</div>
                             </div>
-                            <div class="mb-3 form-check">
+                            <div class="mb-5 form-check">
                               <input type="checkbox" class="form-check-input" id="exampleCheck1">
                               <label class="form-check-label" for="exampleCheck1">Our Company securely stores your data at [enter the location and describe security precautions taken]. Our Company will keep your [enter type of data] for [enter time period]. Once this time period has expired, we will delete your data by [enter how you delete users' data].</label>
                             </div>
@@ -630,7 +633,46 @@
             </div>
         </div>
     </section>
-
+    <!--START FOOTER AREA-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zm73 166.7c11.3-13.8 30.3-18.5 46.7-11.4l112 48c17.6 7.5 27.4 26.5 23.4 45.1l-24 112c-4 18.4-20.3 31.6-39.1 31.6l0 0c-6.1 0-12.2-.1-18.2-.4l-.1 0 0 0c-10-.4-19.8-1.1-29.6-2.2C175.2 485.6 0 295.2 0 64v0C0 45.1 13.2 28.8 31.6 24.9l112-24c18.7-4 37.6 5.8 45.1 23.4l48 112c7 16.4 2.4 35.4-11.4 46.7l-40.6 33.2c26.7 46 65.1 84.4 111.1 111.1L329 286.7zm133.8 78.1l-100.4-43L333 357.6c-14.9 18.2-40.8 22.9-61.2 11.1c-53.3-30.9-97.7-75.3-128.6-128.6c-11.8-20.4-7.1-46.3 11.1-61.2l35.9-29.4-43-100.4L48.1 70.5C51.5 286.2 225.8 460.5 441.5 464l21.3-99.2z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-box__info">
+                        <a href="" rel="noopener noreferrer" class="contact-box__info--title">+34 645234611</a>
+                        <p class="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M392 48H120c-4.4 0-8 3.6-8 8V225.2L69.2 190.1c-1.7-1.4-3.4-2.6-5.2-3.8V56C64 25.1 89.1 0 120 0H392c30.9 0 56 25.1 56 56V186.2c-1.8 1.2-3.5 2.5-5.2 3.8L400 225.2V56c0-4.4-3.6-8-8-8zM160 120c0-13.3 10.7-24 24-24H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24zm0 80c0-13.3 10.7-24 24-24H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24zM48 276.2V456c0 4.4 3.6 8 8 8H456c4.4 0 8-3.6 8-8V276.2L322 392.8c-38.4 31.5-93.7 31.5-132 0L48 276.2zM0 237.9C0 221.4 13.4 208 29.9 208c6.9 0 13.6 2.4 19 6.8l171.6 141c20.7 17 50.4 17 71.1 0l171.6-141c5.3-4.4 12.1-6.8 19-6.8c16.5 0 29.9 13.4 29.9 29.9V456c0 30.9-25.1 56-56 56H56c-30.9 0-56-25.1-56-56V237.9z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-box__info">
+                        <a href="" rel="noopener noreferrer" class="contact-box__info--title">info@company.com</a>
+                        <p class="contact-box__info--subtitle">Online support</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 540">  
+                            <path d="M408 120c0 8.6-1.8 18.3-5 28.6c-5.7 18.4-15.6 38.8-27.4 59.2l-.1 .2c-3.1 5.4-6.3 10.7-9.6 16c-4.4 7-8.9 14-13.5 20.8l-.4 .6c-18.1 26.9-36.7 51.1-49.2 66.6c-7.7 9.6-22 9.6-29.6 0c-12.4-15.5-31.1-39.7-49.2-66.6c-18.4-27.3-36.3-57.5-46.7-84.4c-.8-2.1-1.6-4.2-2.3-6.3c-4.4-12.6-7-24.4-7-34.6c0-4.7 .3-9.3 .8-13.8C175.6 46.4 226.4 0 288 0c66.3 0 120 53.7 120 120zM352 300.6c13.5-18.2 28.8-39.9 42.7-62.4c1.8-2.9 3.6-5.8 5.3-8.8V453.7l128-46.5V154.3L419.3 193.8c2.2-4.7 4.4-9.3 6.3-14c5.9-14 11-29.2 13.2-44.2l105-38.2c7.4-2.7 15.6-1.6 22 2.9s10.2 11.8 10.2 19.7V424c0 10.1-6.3 19.1-15.8 22.6l-176 64c-5.3 1.9-11.1 1.9-16.4 0L200 449.5l-167.8 61c-7.4 2.7-15.6 1.6-22-2.9S0 495.8 0 488V184c0-10.1 6.3-19.1 15.8-22.6L136 117.7c0 .8 0 1.5 0 2.3c0 15.1 3.7 30.7 8.9 45.6L48 200.8V453.7l128-46.5V229.5c1.8 3 3.5 5.9 5.3 8.8c13.9 22.5 29.1 44.2 42.7 62.4V407.2l128 46.5V300.6zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-box__info">
+                        <a href=""  rel="noopener noreferrer" class="contact-box__info--title">Barcelona, SP</a>
+                        <p class="contact-box__info--subtitle">Bar 08005, SP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/vendors/dist/js/glightbox.min.js"></script>
     <script type="text/javascript">

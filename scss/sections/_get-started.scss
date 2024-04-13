@@ -1,16 +1,39 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
+
+
 .get-started{
     padding-bottom: 2rem;
+    
+    h3, h4{
+        padding-bottom: 1rem;
+    }
+
     &__content{
-        padding: 5rem;
         @include gradient;
         color: white;
+        padding: 4rem;
+        border-radius: 1.5rem;
+        ol{
+            list-style: none;
+
+            li{
+                position: relative;
+                right: 1.5rem;
+                margin-left: 0;
+                padding: 0.25rem 0;
+            }
+        }
+        
+        i{
+            display: inline-block;
+            margin-right: 1rem;
+        }
     }
     &__form{
         margin-top: 1rem;
-        padding: 3rem 2rem 0 2rem;
+        padding: 2rem;
         h3{
             @include text-gradient;
             padding-bottom: 1rem;
@@ -18,6 +41,10 @@
         button{
             margin-left: 10%;
             width: 80%;
+        }
+
+        input, textarea, button{
+            box-shadow:  .12rem 0.12rem 0.5rem rgba($black, .15);
         }
     }
 }

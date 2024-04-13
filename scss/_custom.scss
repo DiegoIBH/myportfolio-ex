@@ -2,6 +2,7 @@
 $orange:  #df7a5e;
 $purple-light: #3c405b;
 $green:    #82b29a;
+$footer: #151414;
 
 //white and black colors
 $white:    #fff ;
@@ -31,5 +32,6 @@ $accordion-icon-width: 1.5rem;
 $accordion-padding-y:                     1.5rem;
 $accordion-padding-x:                     1.5rem;
 
+$text-gradiant: linear-gradient(to right, $primary, $secondary);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
