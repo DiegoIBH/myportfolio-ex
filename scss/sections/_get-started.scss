@@ -13,8 +13,12 @@
     &__content{
         @include gradient;
         color: white;
-        padding: 4rem;
+        padding: 2rem;
         border-radius: 1.5rem;
+        @include media-breakpoint-up(sm){
+            padding: 4rem;
+        }
+
         ol{
             list-style: none;
 
