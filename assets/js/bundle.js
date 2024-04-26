@@ -1,20 +1,30 @@
-const webItems = document.querySelector(".web-items");
-const allItems = document.querySelector(".all");
-const designItems = document.querySelector(".design-items");
+const webButton = document.getElementById("buttonWebsites");
+const webItems = document.querySelectorAll(".web-items");
+const allItems = document.querySelectorAll(".all");
+const designItems = document.querySelectorAll(".design-items");
 
-document.getElementById("buttonWebsites").addEventListener("click", () => {
-    allItems.style.display = "none";
-    designItems.style.display = "none";
-    webItems.style.display = "block";
+webButton.addEventListener("click", () => {
+    designItems.forEach(item => {
+        item.style.display = "none";
+    });
+    webItems.forEach(item => {
+        item.style.display = "block";
+    });
+    webButton.classList.add('active-button');
+    
+    console.log(designItems.length);
 });
 
 document.getElementById("buttonAll").addEventListener("click", () => {
-    webItems.style.display = "none";
-    designItems.style.display = "none";
-    allItems.style.display = "block";
+    allItems.forEach(item => {
+        item.style.display = "block";
+    });
 });
 document.getElementById("buttonDesign").addEventListener("click", () => {
-    webItems.style.display = "none";
-    allItems.style.display = "none";
-    designItems.style.display = "block";
+    webItems.forEach(item => {
+        item.style.display = "none";
+    });
+    designItems.forEach(item => {
+        item.style.display = "block";
+    });
 });

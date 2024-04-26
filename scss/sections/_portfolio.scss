@@ -7,6 +7,11 @@
     button{
         text-transform: capitalize;
     }
+    //JS call for button to active
+    .active-button{
+        background-color: $primary;
+        color: $black
+    }
 };
 
 .portfolio-box{
